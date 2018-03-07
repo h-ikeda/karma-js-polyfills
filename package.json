@@ -1,6 +1,6 @@
 {
   "name": "karma-js-polyfills",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "karma plugin to inject js-polyfills.",
   "main": "index.js",
   "author": "Hiroki IKEDA <ikeda_hiroki@icloud.com>",
