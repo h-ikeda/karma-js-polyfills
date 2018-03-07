@@ -3,7 +3,7 @@ function framework(files, config) {
     if (!Array.isArray(config.jsPolyfills)) throw new TypeError('The value of jsPolyfills must be an array.');
     if (config.jsPolyfills.length) {
       config.jsPolyfills.forEach(name => {
-        files.unshift({ pattern: require.resolve('js-polyfills/' + name + '.js')});
+        files.unshift({ pattern: require.resolve('js-polyfills/' + name + '.js'), included: true, served: true, watched: false });
       });
       return;
     }
