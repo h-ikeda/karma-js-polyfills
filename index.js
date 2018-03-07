@@ -10,6 +10,6 @@ function framework(files, config) {
   }
   files.unshift({ pattern: require.resolve('js-polyfills'), watched: false });
 }
-framework.$inject = ['config.files'];
+framework.$inject = ['config.files', 'config'];
 
 module.exports = { 'framework:js-polyfills': ['factory', framework] };
