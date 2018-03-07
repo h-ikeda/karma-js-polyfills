@@ -8,7 +8,7 @@ function framework(files, config) {
       return;
     }
   }
-  files.unshift({ pattern: require.resolve('js-polyfills'), watched: false });
+  files.unshift({ pattern: require.resolve('js-polyfills'), included: true, served: true, watched: false });
 }
 framework.$inject = ['config.files', 'config'];
 
