@@ -5,7 +5,7 @@ module.exports = function(config) {
     plugins: [
       'karma-mocha',
       'karma-chai',
-      'karma-chrome-launcher',
+      'karma-ie-launcher',
       require('./index.js'),
     ],
     files: ['test/integration_test.spec.js'],
