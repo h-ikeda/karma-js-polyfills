@@ -6,6 +6,6 @@ describe('Karma test with polyfills', function suite() {
 
 describe('Karma test without polyfills', function suite() {
   it('Object.entries() should not be able to be called', function test() {
-    expect(function entries() { return Object.entries({ a: 1, b: 2 }); }).to.throw(ReferenceError);
+    expect(function entries() { return Object.entries({ a: 1, b: 2 }); }).to.throw(TypeError);
   });
 });
